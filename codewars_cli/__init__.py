@@ -252,7 +252,10 @@ def practice(
 @click.option("--language", required=True, help="The language to solve the kata in.")
 @click.argument("kata")
 def train(language: str, kata: str):
-    """Choose a kata to solve."""
+    """Choose a kata to solve.
+
+    KATA is the ID of the kata you want to train.
+    You can grab it from the URL or from the `practice` subcommand."""
 
     data = {}
 

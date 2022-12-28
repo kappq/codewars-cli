@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "codewars-cli"
 version = "0.1.0"
-description = "An unofficial CLI for CodeWars"
+description = "An unofficial CLI for CodeWars."
+license = "MIT"
 authors = ["Kappa <f.cappetti.05@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/kappq/codewars-cli"
+keywords = ["cli"]
+classifiers = ["Operating System :: OS Independent"]
 packages = [{include = "codewars_cli"}]
 
 [tool.poetry.dependencies]
@@ -14,12 +18,12 @@ toml = "^0.10.2"
 bs4 = "^0.0.1"
 rich = "^12.6.0"
 
-[tool.poetry.scripts]
-codewars-cli = "codewars_cli:main"
-
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
 isort = "^5.11.4"
+
+[tool.poetry.scripts]
+codewars-cli = "codewars_cli:main"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "codewars-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "An unofficial CLI for CodeWars."
 license = "MIT"
 authors = ["Kappa <f.cappetti.05@gmail.com>"]

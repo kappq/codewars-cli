@@ -102,6 +102,8 @@ def build_output(items: list, tree: Tree):
                 tree.add(f"[red]{item['v']}[/red]")
             case "error":
                 tree.add(Panel.fit(item["v"], border_style="red"))
+            case "log":
+                tree.add(Panel.fit(item["v"], title="Log", title_align="left"))
 
         sub_items = item.get("items")
         if sub_items:

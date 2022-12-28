@@ -7,6 +7,10 @@ You need to set the `CW_SESSION_ID` and `CW_REMEMBER_USER_TOKEN` environment var
 Rich will look at `MANPAGER` then the `PAGER` environment variables (`MANPAGER` takes priority) to get the pager command. On Linux and macOS you can set one of these to `less -r` to display the description with ANSI styles.
 
 ## Installation
+You can install `codewars-cli` using `pip`:
+```
+pip install codewars-cli
+```
 
 ## Usage
 ```
@@ -25,4 +29,4 @@ Commands:
   test      Test against the sample tests.
   train     Choose a kata to solve.
 ```
-You can to the same for each subcommand.
+You can do the same for each subcommand.

@@ -6,6 +6,7 @@ import urllib
 import bs4
 import click
 import cloudscraper
+from rich import box
 from rich.console import Console, group
 from rich.markdown import Markdown
 from rich.padding import Padding
@@ -145,6 +146,11 @@ def run(payload, token):
 
         if stderr_panel:
             yield Padding(stderr_panel, (1, 0, 0, 0))
+
+        if exit_code == 0:
+            yield Padding(
+                Panel("[green]You passed all the tests![/green]", box=box.ASCII, border_style="green"), (1, 0, 0, 0)
+            )
 
     # Create panel
     title = f"{time}   {passed}   {failed}   Exit Code: {exit_code}"

@@ -23,7 +23,7 @@ black = "^22.12.0"
 isort = "^5.11.4"
 
 [tool.poetry.scripts]
-codewars-cli = "codewars_cli:main"
+codewars = "codewars_cli:main"
 
 [build-system]
 requires = ["poetry-core"]

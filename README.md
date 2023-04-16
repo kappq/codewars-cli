@@ -14,8 +14,8 @@ pip install codewars-cli
 
 ## Usage
 ```
-$ codewars-cli --help
-Usage: codewars-cli [OPTIONS] COMMAND [ARGS]...
+$ codewars --help
+Usage: codewars [OPTIONS] COMMAND [ARGS]...
 
   An unofficial CLI for CodeWars.
 
@@ -29,4 +29,4 @@ Commands:
   test      Test against the sample tests.
   train     Choose a kata to solve.
 ```
-You can do the same for each subcommand.
+You can also check the help for each subcommand.

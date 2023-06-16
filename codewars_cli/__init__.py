@@ -426,12 +426,14 @@ def submit():
     solution_id = data["solutionId"]
     x_csrf_token = data["csrfToken"]
     language_name = data["languageName"]
+    authorization = data["authorization"]
 
     # Submit the solution
     submit_url = (
         f"https://www.codewars.com/api/v1/code-challenges/projects/{project_id}/solutions/{solution_id}/finalize"
     )
-    headers = {"X-CSRF-Token": x_csrf_token}
+    headers = {"authorization": authorization, "X-CSRF-Token": x_csrf_token}
+
     response = scraper.post(submit_url, cookies=cookies, headers=headers).json()
 
     if response["success"]:
